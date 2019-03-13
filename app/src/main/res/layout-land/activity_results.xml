@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultsActivity">
+
+    <TextView
+        android:id="@+id/textView_TitleResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Results"
+        android:textSize="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/textView_TitleResult"
+        app:layout_constraintBottom_toTopOf="@id/button_Return"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:stretchColumns="*"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView_00"
+                android:layout_width="wrap_content"
+                style="@style/headers"
+                android:text="Drink"
+                />
+
+            <TextView
+                android:id="@+id/textView_01"
+                android:layout_width="wrap_content"
+                style="@style/headers"
+                android:text="Apple" />
+
+            <TextView
+                android:id="@+id/textView_02"
+                android:layout_width="wrap_content"
+                style="@style/headers"
+                android:text="Orange" />
+
+            <TextView
+                android:id="@+id/textView_03"
+                android:layout_width="wrap_content"
+                style="@style/headers"
+                android:text="Mixed" />
+
+            <TextView
+                android:id="@+id/textView_04"
+                android:layout_width="wrap_content"
+                style="@style/headers"
+                android:text="CocaCola" />
+
+            <TextView
+                android:id="@+id/textView_05"
+                android:layout_width="wrap_content"
+                style="@style/headers"
+                android:text="Sprite" />
+
+            <TextView
+                android:id="@+id/textView_06"
+                android:layout_width="wrap_content"
+                style="@style/headers"
+                android:text="Seven-Up" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/textView_10"
+                android:layout_width="0dp"
+                style="@style/headers"
+                android:text="Total"
+                />
+
+            <TextView
+                android:id="@+id/textView_11"
+                android:layout_width="wrap_content"
+                style="@style/data"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView_12"
+                android:layout_width="wrap_content"
+                style="@style/data"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView_13"
+                android:layout_width="wrap_content"
+                style="@style/data"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView_14"
+                android:layout_width="wrap_content"
+                style="@style/data"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView_15"
+                android:layout_width="wrap_content"
+                style="@style/data"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView_16"
+                android:layout_width="wrap_content"
+                style="@style/data"
+                android:text="TextView" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView_20"
+                android:layout_width="wrap_content"
+                style="@style/headers"
+                android:text="Percentage" />
+
+            <TextView
+                android:id="@+id/textView_21"
+                android:layout_width="wrap_content"
+                style="@style/data"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView_22"
+                android:layout_width="wrap_content"
+                style="@style/data"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView_23"
+                android:layout_width="wrap_content"
+                style="@style/data"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView_24"
+                android:layout_width="wrap_content"
+                style="@style/data"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView_25"
+                android:layout_width="wrap_content"
+                style="@style/data"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView_26"
+                android:layout_width="wrap_content"
+                style="@style/data"
+                android:text="TextView" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button_Return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"/>
+
+</android.support.constraint.ConstraintLayout>

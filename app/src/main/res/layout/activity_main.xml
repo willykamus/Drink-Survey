@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drinks Survey"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textView_ClientNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Client Number"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_Title"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/editText_ClientNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintStart_toEndOf="@id/textView_ClientNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/textView_ClientNumber"/>
+
+    <TextView
+        android:id="@+id/textView_DrinkType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drink Type"
+        app:layout_constraintTop_toBottomOf="@id/textView_ClientNumber"
+        app:layout_constraintStart_toStartOf="@id/textView_ClientNumber"
+        android:layout_marginTop="30dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_DrinkType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/editText_ClientNumber"
+        app:layout_constraintEnd_toEndOf="@id/editText_ClientNumber"
+        app:layout_constraintTop_toTopOf="@id/textView_DrinkType"
+        app:layout_constraintBottom_toBottomOf="@id/textView_DrinkType"
+        />
+
+    <TextView
+        android:id="@+id/textView_Drink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drink"
+        app:layout_constraintStart_toStartOf="@id/textView_ClientNumber"
+        app:layout_constraintTop_toBottomOf="@id/textView_DrinkType"
+        android:layout_marginTop="30dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/editText_ClientNumber"
+        app:layout_constraintEnd_toEndOf="@id/editText_ClientNumber"
+        app:layout_constraintTop_toTopOf="@id/textView_Drink"
+        app:layout_constraintBottom_toBottomOf="@id/textView_Drink"
+        android:orientation="horizontal"
+         >
+
+        <RadioButton
+            android:id="@+id/radioButton_Option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:text="Option1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_Option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:text="Option1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_Option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:text="Option1" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView_Cups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="N_Cups/day"
+        app:layout_constraintStart_toStartOf="@id/textView_ClientNumber"
+        app:layout_constraintTop_toBottomOf="@id/textView_Drink"
+        android:layout_marginTop="30dp"
+        tools:layout_editor_absoluteY="162dp" />
+
+    <EditText
+        android:id="@+id/editText_Cups"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="@id/editText_ClientNumber"
+        app:layout_constraintEnd_toEndOf="@id/editText_ClientNumber"
+        app:layout_constraintBaseline_toBaselineOf="@id/textView_Cups"/>
+
+    <Button
+        android:id="@+id/button_Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/button_New"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New"
+        app:layout_constraintStart_toEndOf="@id/button_Add"
+        app:layout_constraintTop_toTopOf="@id/button_Add"
+        app:layout_constraintEnd_toStartOf="@id/button_Result"/>
+
+    <Button
+        android:id="@+id/button_Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="@id/button_Add" />
+</android.support.constraint.ConstraintLayout>
